@@ -1,0 +1,225 @@
+<main>
+  <h3>{{ lessonCard.name }}</h3>
+
+  <section class="section introduction">
+    <h4>Introduction</h4>
+    <p [innerHTML]="lessonCard.introduction"></p>
+  </section>
+
+  <section class="step1">
+    @if (lessonCard.stepOne?.stepTitle) {
+      <div class="dfac">
+        <h4>1. {{ lessonCard.stepOne?.stepTitle }}</h4>
+        <img
+          class="skills-logos"
+          src="{{ lessonCard.stepOne?.logoToDisplay?.pathImg }}"
+        />
+      </div>
+    }
+
+    @if (lessonCard.stepOne?.stepDescription) {
+      <p [innerHTML]="lessonCard.stepOne?.stepDescription"></p>
+    }
+
+    <ng-container class="stepOne">
+      @if (lessonCard.stepOne?.componentTitle) {
+        <pre><code class="componentTitle">{{lessonCard.stepOne?.componentTitle}}</code></pre>
+      }
+
+      @if (lessonCard.stepOne?.html) {
+        <app-codedisplay
+          [code]="lessonCard.stepOne?.html ?? ''"
+          language="html"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepOne?.detailNoteHTML) {
+        <p class="note" [innerHTML]="lessonCard.stepOne?.detailNoteHTML"></p>
+      }
+
+      @if (lessonCard.stepOne?.css) {
+        <app-codedisplay
+          [code]="lessonCard.stepOne?.css ?? ''"
+          language="css"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepOne?.detailNoteCSS) {
+        <p class="note" [innerHTML]="lessonCard.stepOne?.detailNoteCSS"></p>
+      }
+
+      @if (lessonCard.stepOne?.typescript) {
+        <app-codedisplay
+          [code]="lessonCard.stepOne?.typescript ?? ''"
+          language="typescript"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepOne?.detailNoteTS) {
+        <p class="note" [innerHTML]="lessonCard.stepOne?.detailNoteTS"></p>
+      }
+    </ng-container>
+  </section>
+
+  <section class="step2">
+    @if (lessonCard.stepTwo?.stepTitle) {
+      <div class="dfac">
+        <h4>2. {{ lessonCard.stepTwo?.stepTitle }}</h4>
+        <img
+          class="skills-logos"
+          src="{{ lessonCard.stepTwo?.logoToDisplay?.pathImg }}"
+        />
+      </div>
+    }
+
+    @if (lessonCard.stepTwo?.stepDescription) {
+      <p [innerHTML]="lessonCard.stepTwo?.stepDescription"></p>
+    }
+
+    <ng-container class="stepTwo">
+      @if (lessonCard.stepTwo?.componentTitle) {
+        <pre><code class="componentTitle">{{lessonCard.stepTwo?.componentTitle}}</code></pre>
+      }
+
+      @if (lessonCard.stepTwo?.html) {
+        <app-codedisplay
+          [code]="lessonCard.stepTwo?.html ?? ''"
+          language="html"
+        ></app-codedisplay>
+      }
+      @if (lessonCard.stepTwo?.detailNoteHTML) {
+        <p class="note" [innerHTML]="lessonCard.stepTwo?.detailNoteHTML"></p>
+      }
+
+      @if (lessonCard.stepTwo?.css) {
+        <app-codedisplay
+          [code]="lessonCard.stepTwo?.css ?? ''"
+          language="css"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepTwo?.detailNoteCSS) {
+        <p class="note" [innerHTML]="lessonCard.stepTwo?.detailNoteCSS"></p>
+      }
+
+      @if (lessonCard.stepTwo?.typescript) {
+        <app-codedisplay
+          [code]="lessonCard.stepTwo?.typescript ?? ''"
+          language="typescript"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepTwo?.typescript) {
+        <p class="note" [innerHTML]="lessonCard.stepTwo?.detailNoteTS"></p>
+      }
+    </ng-container>
+  </section>
+
+  <section class="step3">
+    @if (lessonCard.stepThree?.stepTitle) {
+      <div class="dfac">
+        <h4>3. {{ lessonCard.stepThree?.stepTitle }}</h4>
+        <img
+          class="skills-logos"
+          src="{{ lessonCard.stepThree?.logoToDisplay?.pathImg }}"
+        />
+      </div>
+    }
+
+    @if (lessonCard.stepThree?.stepDescription) {
+      <p [innerHTML]="lessonCard.stepThree?.stepDescription"></p>
+    }
+
+    <ng-container class="stepThree">
+      @if (lessonCard.stepThree?.componentTitle) {
+        <pre><code class="componentTitle">{{lessonCard.stepThree?.componentTitle}}</code></pre>
+      }
+
+      @if (lessonCard.stepThree?.html) {
+        <app-codedisplay
+          [code]="lessonCard.stepThree?.html ?? ''"
+          language="html"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepThree?.detailNoteHTML) {
+        <p class="note" [innerHTML]="lessonCard.stepThree?.detailNoteHTML"></p>
+      }
+
+      @if (lessonCard.stepThree?.css) {
+        <app-codedisplay
+          [code]="lessonCard.stepThree?.css ?? ''"
+          language="css"
+        ></app-codedisplay>
+      }
+      @if (lessonCard.stepThree?.detailNoteCSS) {
+        <p class="note" [innerHTML]="lessonCard.stepThree?.detailNoteCSS"></p>
+      }
+
+      @if (lessonCard.stepThree?.typescript) {
+        <app-codedisplay
+          [code]="lessonCard.stepThree?.typescript ?? ''"
+          language="typescript"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepThree?.detailNoteTS) {
+        <p class="note" [innerHTML]="lessonCard.stepThree?.detailNoteTS"></p>
+      }
+    </ng-container>
+  </section>
+
+  <section class="step4">
+    @if (lessonCard.stepFour?.stepTitle) {
+      <div class="dfac">
+        <h4>4. {{ lessonCard.stepFour?.stepTitle }}</h4>
+        <img
+          class="skills-logos"
+          src="{{ lessonCard.stepFour?.logoToDisplay?.pathImg }}"
+        />
+      </div>
+    }
+
+    @if (lessonCard.stepFour?.stepDescription) {
+      <p [innerHTML]="lessonCard.stepFour?.stepDescription"></p>
+    }
+
+    <ng-container class="stepFour">
+      @if (lessonCard.stepFour?.componentTitle) {
+        <pre><code class="componentTitle">{{lessonCard.stepFour?.componentTitle}}</code></pre>
+      }
+
+      @if (lessonCard.stepFour?.html) {
+        <app-codedisplay
+          [code]="lessonCard.stepFour?.html ?? ''"
+          language="html"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepFour?.detailNoteHTML) {
+        <p class="note" [innerHTML]="lessonCard.stepFour?.detailNoteHTML"></p>
+      }
+
+      @if (lessonCard.stepFour?.css) {
+        <app-codedisplay
+          [code]="lessonCard.stepFour?.css ?? ''"
+          language="css"
+        ></app-codedisplay>
+      }
+      @if (lessonCard.stepFour?.detailNoteCSS) {
+        <p class="note" [innerHTML]="lessonCard.stepFour?.detailNoteCSS"></p>
+      }
+
+      @if (lessonCard.stepFour?.typescript) {
+        <app-codedisplay
+          [code]="lessonCard.stepFour?.typescript ?? ''"
+          language="typescript"
+        ></app-codedisplay>
+      }
+
+      @if (lessonCard.stepFour?.detailNoteTS) {
+        <p class="note" [innerHTML]="lessonCard.stepFour?.detailNoteTS"></p>
+      }
+    </ng-container>
+  </section>
+</main>

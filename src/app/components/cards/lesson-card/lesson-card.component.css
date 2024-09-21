@@ -1,0 +1,30 @@
+.card {
+  margin: 0 auto;
+  border-radius: 13px;
+  border: 1px solid var(--stroke);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+h2 {
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card p {
+  font-size: 14px;
+}

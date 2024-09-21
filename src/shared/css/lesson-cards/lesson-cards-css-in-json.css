@@ -1,0 +1,91 @@
+/* ID 1 */
+
+/* TEXT-INTRODUCTION  */
+.text-introduction {
+  font-size: 1.1em;
+  /* Taille de la police */
+  line-height: 1.6;
+  /* Espacement entre les lignes */
+  color: #333;
+  /* Couleur du texte */
+  margin: 20px 0;
+  /* Marges en haut et en bas */
+  padding: 15px;
+  /* Rembourrage intérieur */
+  background-color: rgba(240, 240, 240, 0.8);
+  /* Fond léger */
+  border-left: 4px solid #007acc;
+  /* Bordure à gauche */
+  border-radius: 4px;
+  /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Ombre légère */
+}
+
+.step-description {
+  font-size: 1.1em;
+  /* Taille de la police */
+  color: #333;
+  /* Couleur du texte */
+  background-color: rgba(0, 122, 204, 0.1);
+  /* Fond léger */
+  padding: 10px;
+  /* Espacement interne */
+  border-left: 4px solid #007acc;
+  /* Bordure à gauche */
+  border-radius: 4px;
+  /* Coins arrondis */
+  margin-bottom: 15px;
+  /* Espacement en bas */
+  line-height: 1.5;
+  /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/* STEP-DESCRIPTION  */
+.one {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid #007acc;
+  background-color: rgba(255, 220, 220, 0.7);
+  border-radius: 4px;
+  color: #000000;
+}
+
+.two {
+  font-size: 1em;
+  margin: 10px 0;
+  padding: 8px;
+  border-left: 4px solid #4caf50;
+  background-color: rgba(220, 255, 220, 0.7);
+  color: #000000;
+}
+
+.three {
+  font-size: 1em;
+  margin: 10px 0;
+  padding: 8px;
+  border-left: 4px solid #3f51b5;
+  background-color: rgba(220, 220, 255, 0.7);
+  color: #000000;
+}
+
+.colorff6666 {
+  color: #ff6666;
+}
+
+.colorffcb6b {
+  color: #ffcb6b;
+}
+
+.color89ddff {
+  color: #89ddff;
+}
+
+.colora5e844 {
+  color: #a5e844;
+}
+
+.colorc792ea {
+  color: #c792ea;
+}

@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBAL  */
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+:root {
+  --stroke: #e5e3e3;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* DISPLAY FLEX  */
+.df {
+  display: flex;
+}
+
+.dfjc {
+  display: flex;
+  justify-content: center;
+}
+
+.dfac {
+  display: flex;
+  align-items: center;
+}
+
+.dfjcac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
